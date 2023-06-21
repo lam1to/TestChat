@@ -8,18 +8,42 @@ datasource db {
 }
 
 model User {
-  id         Int      @id @default(autoincrement())
-  createdAt  DateTime @default(now()) @map("created_at")
-  updatedAt  DateTime @updatedAt @map("updated_at")
-  email      String   @unique
+  id         Int        @id @default(autoincrement())
+  createdAt  DateTime   @default(now()) @map("created_at")
+  updatedAt  DateTime   @updatedAt @map("updated_at")
+  email      String     @unique
   password   String
   name       String
   lastName   String
-  avatarPath String   @default("C:/Users/Lam1to/Pictures/testChatDefaultAvatar.jpg") @map("avatar_path")
+  avatarPath String     @default("C:/Users/Lam1to/Pictures/testChatDefaultAvatar.jpg") @map("avatar_path")
+  userChats  UserChat[]
+  messages   Message[]
 }
 
 model Chat {
+  id        Int        @id @default(autoincrement())
+  type      String     @default("DM")
+  createdAt DateTime   @default(now()) @map("created_at")
+  userChats UserChat[]
+  messages  Message[]
+}
+
+model UserChat {
+  id Int @id @default(autoincrement())
+
+  Chat   Chat? @relation(fields: [chatId], references: [id])
+  chatId Int?
+  User   User? @relation(fields: [userId], references: [id])
+  userId Int?
+}
+
+model Message {
   id        Int      @id @default(autoincrement())
-  type      String   @default("DM")
+  content   String
   createdAt DateTime @default(now()) @map("created_at")
+
+  Chat   Chat? @relation(fields: [chatId], references: [id])
+  chatId Int?
+  User   User? @relation(fields: [userId], references: [id])
+  userId Int?
 }
