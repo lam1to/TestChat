@@ -1,0 +1,19 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id         Int      @id @default(autoincrement())
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+  email      String   @unique
+  password   String
+  name       String
+  lastName   String
+  avatarPath String   @default("C:/Users/Lam1to/Pictures/testChatDefaultAvatar.jpg") @map("avatar_path")
+}
