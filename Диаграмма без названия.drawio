@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-31T15:24:34.132Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 YaBrowser/23.7.3.824 Yowser/2.5 Safari/537.36" etag="ztpQ_m9tNPdhScAqpX0Z" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-01T18:47:38.043Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 YaBrowser/23.7.3.824 Yowser/2.5 Safari/537.36" etag="TXOD2AZPYdFaQFjz887w" version="21.6.8" type="github">
   <diagram name="Страница 1" id="QmQG7__sX2fGGdicu--L">
     <mxGraphModel dx="1015" dy="572" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -263,7 +263,7 @@
         <mxCell id="ipP4uuFzTiVYTbIQqYEd-5" value="userId:int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="ipP4uuFzTiVYTbIQqYEd-2">
           <mxGeometry y="90" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="ipP4uuFzTiVYTbIQqYEd-6" value="lastMessageId:int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="ipP4uuFzTiVYTbIQqYEd-2">
+        <mxCell id="ipP4uuFzTiVYTbIQqYEd-6" value="lastMessageNumber:int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="ipP4uuFzTiVYTbIQqYEd-2">
           <mxGeometry y="120" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="ipP4uuFzTiVYTbIQqYEd-10" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;" edge="1" parent="1" source="xha6hpCwvMvkaGBKB4Dv-37" target="ipP4uuFzTiVYTbIQqYEd-6">
